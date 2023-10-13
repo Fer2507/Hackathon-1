@@ -1,0 +1,50 @@
+<html>
+<head> <title>Teatro</title> </head> 
+<body align="center"  background="fondo.png"></body>
+<div class="content" >
+    <header id="top">
+    <aside>
+      <div>
+        <h1>ClicTix<img src="logo.jpg" class="Principal" width="100px"></h1>
+      </div>
+      </aside>
+    </header>
+    <nav id="navegate">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+      <div id="hamitems">
+      <ul class="figure"> 
+        <br><td><h2><a href="ClicTix.html" class="active">Inicio</a></td>
+      </ul>
+</div>
+<title>Comprar Entradas</title>
+</head>
+<div class="figure">
+  <br><h2 align="center">Comprar Entradas</h2>
+  <h3>
+    <form action="procesar_compra.php" method="post">
+      <label for="evento">Event:</label>
+      <select id="evento" name="evento">
+              <option value="D`Mentes">D'Mente, Ari Telch, Teatro de los Heroes,17/octubre, 19:00Hrs</option>
+              <option value="Las brujas de Macbeth">Las brujas de Macbeth, Teatro de la Ciudad(Chihuahua), 29/Octubre, 18hr</option>
+              <option value="Exorcista">El Exorcista, del 1 al 16 de Noviembre, Casa de Helguera</option>
+          </select><br><br>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="cantidad">Numero de Tickets:</label>
+        <input type="number" id="cantidad" name="cantidad" required><br><br>
+        <label for="tipo">TIpo de Ticket:</label>
+        <select id="tipo" name="tipo">
+            <option value="general">General</option>
+            <option value="vip">VIP</option>
+            <option value="niño">Infantil</option>
+        </select><br><br>
+
+        <input type="submit" value="Comprar Entradas">
+    </form>
+  </h3>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+<head> <title>ClicTix </title> </head> <body background="fondo.png">
+<div class="content" >
+    <header id="top">
+    <aside>
+      <div>
+        <h1  align="center">ClicTix <img src="logo.jpg" class="Principal" width="100px"></h1>
+      </div>
+      </aside>
+    </header>
+    <nav id="navegate">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+      <div id="hamitems">
+      <ul> 
+        <br><td><h2 align="center"><a href="ClicTix.html" class="active">Home</a></td>
+      </ul>
+</div>
+<style>
+  .figure {width: 500px;height: 300px;background-color: #efaaaa; margin: 0 auto;}
+</style>
+<div class="figure">
+  <br><h2 align="center">Formulario de Contacto</h2>
+<h3>
+    <form action="procesar_formulario.php" method="post" align="center">
+      <br><br> 
+      <!-- Campo de entrada de texto para el nombre -->
+        <label  for="nombre"> Name: </label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        <!-- Campo de entrada de correo electrónico -->
+        <label for="email"> email: </label>
+        <input type="email" id="email" name="email" required><br><br>
+        <!-- Casilla de verificación para una suscripción -->
+        <label> I accept the terms and conditions Privacy Policy </label>
+        <input type="checkbox" id="suscribir" name="suscribir"><br><br>
+        <!-- Botón de envío del formulario -->
+        <input type="submit" value="Enviar" >
+    </form>
+  </h3>
+  </div>
+</body>
+</html>
